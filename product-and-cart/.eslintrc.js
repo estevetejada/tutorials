@@ -1,3 +1,5 @@
+const { stringifyStyle } = require('@vue/shared');
+
 module.exports = {
     root: true,
     env: {
@@ -15,5 +17,6 @@ module.exports = {
         'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
         'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
         'prettier/prettier': ['error', { tabWidth: 4 }],
+        quotes: [2, 'single', { avoidEscape: true }],
     },
 };
