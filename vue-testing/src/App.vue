@@ -1,15 +1,21 @@
 <template>
+    <Nav />
     <img alt="Vue logo" src="./assets/logo.png" />
     <TodoApp />
+    <Parent />
 </template>
 
 <script lang="ts">
 import { Options, Vue } from 'vue-class-component';
 import TodoApp from './components/TodoApp.vue';
+import Nav from '@/components/Nav.vue';
+import Parent from '@/components/Parent.vue';
 
 @Options({
     components: {
         TodoApp,
+        Nav,
+        Parent
     },
 })
 export default class App extends Vue {}
