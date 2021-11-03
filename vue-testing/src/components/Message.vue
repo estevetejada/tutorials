@@ -5,10 +5,10 @@
 </template>
 
 <script lang="ts">
-export default {
-    name: 'Message',
-    props: {
-        msg: String,
-    },
-};
+    export default {
+        name: 'Message',
+        props: {
+            msg: String,
+        },
+    }
 </script>
